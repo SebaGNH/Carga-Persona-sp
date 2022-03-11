@@ -12,19 +12,3 @@
 -Luego, al aceptar el cuadro de dialogo se deben Limpiar los campos y darle foco a la primera caja de texto.
 (this.txtNombre.getFocus())
 Agregarle la función ValidarCampos() para que no se pueda cargar si falta rellenar algún campo.
-
-
-
- Persona p;
-                String nombre = this.txtNombre.getText();
-                int edad = Integer.parseInt(this.txtEdad.getText());
-
-                int sex = this.cboSexo.getSelectedIndex();
-                boolean sexo;
-                    if (sex){
-                        sexo = true;
-                    }else{
-                        sexo = false;
-                    }
-                p = new Persona(nombre,edad,sexo);
-                JOptionPane.showMessageDialog(null, "Datos Cargados exitosamente "+ p.toString());
